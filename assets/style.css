@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323940;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    right:0 ;
+    width: 100%;
+    padding: 12px 4%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo{
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    text-shadow: 0 0 1rem var(--main-color);
+    transition: .5s ease;
+}
+
+.logo:hover{
+    text-shadow: none;
+    color: var(--text-color);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,.navbar a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 30vw;
+    transition: .5s ease;
+}
+
+.home-img img:hover {
+    width: 34vw;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+
+.home-content h3:hover{
+    color: var(--main-color);
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 10rem;
+}
+
+.home-content h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: .5s ease;
+}
+
+.home-content h1:hover{
+    font-size: 5rem;
+    color: var(--main-color);
+    text-shadow: 0 0 1rem var(--main-color);
+}
+
+.home-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+
+.home-content h2:hover{
+    color: var(--main-color);
+}
+
+.home-content span{
+    color: var(--main-color);
+    transition: .5s ease;
+}
+
+.home-content span:hover{
+    color: var(--text-color);
+}
+
+.home-content p {
+    font-size: 1.3rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    border: .2rem solid var(--main-color);
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.myprofile{
+    background: var(--second-bg-color);
+}
+
+.portofolio-img img {
+    position: relative;
+    top: -10px;
+    right: 70px;
+    width: 37vw;
+    transition: .5s ease;
+}
+
+.portofolio-img img:hover {
+    width: 40vw;
+}
+
+.portofolio-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portofolio-content .portofolio-box{
+    position: relative;
+    right: 30px;
+    flex: 50rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 1rem;
+    border-radius: 3rem;
+    text-align: justify;
+    margin: 0 -9rem;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s ease;
+}
+
+.portofolio-content .portofolio-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.portofolio-box h3 {
+    font-size: 3rem;
+}
+.portofolio-box samp{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.portofolio-box h2{
+    text-align: 1eft;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+.portofolio-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.heading {
+    position: relative;
+    top: -25px;
+    left: 450px;
+    font-size: 4rem;
+}
+
+.heading samp{
+    color: var(--main-color);
+}
+.myskill .skill-row{
+    position: relative;
+    top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skill-row .skill-colum{
+    flex: 1 1 40rem;
+}
+
+.skill-colum .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skill-box .skill-content{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    transition: .5s ease;
+
+}
+
+.skill-box .skill-content:hover{
+    transform: scale(1.05);
+}
+
+.skill-content .progres{
+    padding: 1rem 0;
+}
+
+.skill-content .progres h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s ease;
+}
+
+.skill-content .progres h3:hover{
+    color: var(--main-color);
+}
+
+.skill-content .progres .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem;
+    transition: .2s ease;
+}
+
+.skill-content .progres .bar:hover{
+    border-color: var(--text-color);
+}
+.skill-content .progres .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+    transition: .2s ease;
+}
+
+.skill-content .progres .bar span:hover{
+    background: var(--text-color);
+}
+
+.skill-colum:nth-child(1) .skill-content .progres:nth-child(1) .bar span{
+    width: 10%;
+}
+.skill-colum:nth-child(1) .skill-content .progres:nth-child(2) .bar span{
+    width: 10%;
+}
+.skill-colum:nth-child(1) .skill-content .progres:nth-child(3) .bar span{
+    width: 20%;
+}
+.skill-colum:nth-child(1) .skill-content .progres:nth-child(4) .bar span{
+    width: 5%;
+}
+.skill-colum:nth-child(2) .skill-content .progres:nth-child(1) .bar span{
+    width: 10%;
+}
+.skill-colum:nth-child(2) .skill-content .progres:nth-child(2) .bar span{
+    width: 5%;
+}
+.skill-colum:nth-child(2) .skill-content .progres:nth-child(3) .bar span{
+    width: 10%;
+}
+.skill-colum:nth-child(2) .skill-content .progres:nth-child(4) .bar span{
+    width: 40%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.foter-tex p {
+    font-size: 100rem;
+}
+
+.foter-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.foter-icon a:hover{
+    box-shadow: var(--main-color);
+}
+.foter-icon a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3vw;
+    }
+
+    section {
+        padding: 10rem 3vw 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .portofolio-content .portofolio-box {
+        flex-direction: column-reverse;
+        margin-bottom: 3rem;
+        position: relative;
+        top: -60px;
+        right: 0;
+        flex: 1;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 0;
+    }
+
+    .portofolio-img img {
+        position: relative;
+        top: -80px;
+        left: 5px;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .heading {
+        left: 10px;
+    }
+}
